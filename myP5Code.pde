@@ -5,7 +5,8 @@ void setup() {
 }
 
 //🎯Varaible Declarations Go Here
-var eyeSize = 8;
+var eyeSize = 40;
+var teethLength = 85;
 
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
@@ -26,9 +27,13 @@ void draw(){
 
   line(150, 200, 250, 200);   // mouth
 
-  noFill();
-  rect(185, 200, 15, 10); // left tooth
-  rect(200, 200, 15, 10); // right tooth
+  fill(255,255,255);
+  rect(185, 200, 15, teethLength); // left tooth
+  rect(200, 200, 15, teethLength); // right tooth
+
+  // third eye
+  fill(0,0,0)
+  ellipse(200,118,eyeSize,eyeSize);
   
 
 }
